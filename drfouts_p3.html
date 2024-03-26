@@ -1,15 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Survey - Additional Questions</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Business Analytics Student Survey - Page 3</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/your_kit_code.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <form action="hawkid_p4.html" method="post">
-    <!-- Continue with the next part of the form -->
-    <!-- Include the gender question with tooltip as shown in the storyboard -->
-    <input type="submit" value="Finish">
-  </form>
+  <div class="container">
+    <h1>Business Analytics Student Survey - Page 3</h1>
+    <form action="hawkid_p4.html" method="post">
+      <div class="form-group">
+        <label for="race">1. What is your race/ethnicity?</label>
+        <span class="tooltip">
+          <i class="fa-solid fa-circle-info"></i>
+          <span class="tooltiptext">This information is collected to ensure diversity and inclusion.</span>
+        </span>
+        <select name="race" id="race" required>
+          <option value="">Select</option>
+          <option value="asian">Asian</option>
+          <option value="black_african_american">Black or African American</option>
+          <option value="hispanic_latino">Hispanic or Latino</option>
+          <option value="white">White</option>
+          <option value="native_american_alaskan_native">Native American or Alaska Native</option>
+          <option value="native_hawaiian_pacific_islander">Native Hawaiian or Pacific Islander</option>
+          <option value="two_or_more_races">Two or more races</option>
+          <option value="other">Other</option>
+        </select>
+        
+      </div>
+      
+      <div class="form-group">
+        <label for="gender">2. What is your gender/sex?</label>
+        <span class="tooltip">
+          <i class="fa-solid fa-circle-info"></i>
+          <span class="tooltiptext">Tooltip text for gender/sex.</span>
+        </span>
+        <select name="gender" id="gender" required>
+          <option value="">Select</option>
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+          <option value="non_binary">Non-binary</option>
+          <option value="transgender">Transgender</option>
+          <option value="prefer_not_to_say">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+        
+      </div>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </div>
 </body>
 </html>

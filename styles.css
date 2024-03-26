@@ -1,14 +1,132 @@
-body {
-    font-family: 'Your Google Font Name', sans-serif;
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+  h1 {
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
   }
   
   form {
-    /* Add your form styling here */
+    display: flex;
+    flex-direction: column;
   }
   
-  .button {
-    /* Style your button */
+  label {
+    margin-top: 10px;
   }
   
-  /* Add additional CSS for tooltips, fonts, and responsive design */
+  input[type="text"],
+  select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #003366;
+  }
+  /* Additional styles for stacked elements */
+.form-group {
+    margin-bottom: 20px;
+  }
+  
+  .block {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .block input[type="radio"],
+  .block input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  /* ... existing styles ... */
+
+/* Tooltip styling */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* optional, if you want a dotted underline */
+  }
+  
+  .tooltip .fa-circle-info {
+    color: #555;
+    margin-left: 5px;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    
+    /* Positioning */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    
+    /* Fade in */
+    opacity: 0;
+    transition: opacity 0.6s;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* ... additional styles ... */
+  
+  /* Adjust the layout for select elements */
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px; /* space between select and next question */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Style adjustments for the form groups and labels for a cleaner look */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-top: 20px;
+  }
   
