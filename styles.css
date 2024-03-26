@@ -129,4 +129,23 @@ body, html {
     display: block;
     margin-top: 20px;
   }
+  /* ... other styles ... */
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #0056b3; /* or your chosen color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .button:hover {
+    background-color: #003366; /* a darker shade for hover state */
+  }
+  
+  /* ... other styles ... */
   
